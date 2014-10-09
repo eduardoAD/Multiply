@@ -33,6 +33,11 @@
     int result = number * multiplier;
 
     self.answerLabel.text = @(result).description;
+    if (result >= 20) {
+        self.view.backgroundColor = [UIColor greenColor];
+    }else{
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
 }
 
 @end
