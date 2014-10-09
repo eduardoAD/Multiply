@@ -11,6 +11,7 @@
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *numberTextField;
 @property (strong, nonatomic) IBOutlet UILabel *multiplierLabel;
+@property (strong, nonatomic) IBOutlet UILabel *answerLabel;
 
 @end
 
