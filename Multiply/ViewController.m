@@ -32,12 +32,23 @@
 
     int result = number * multiplier;
 
-    self.answerLabel.text = @(result).description;
     if (result >= 20) {
         self.view.backgroundColor = [UIColor greenColor];
     }else{
         self.view.backgroundColor = [UIColor whiteColor];
     }
+
+    NSMutableString *fizzBuzzText = [[NSMutableString alloc] initWithString:@""];
+    if ((result % 3) == 0) {
+        [fizzBuzzText appendString:@"fizz"];
+    }
+    if ((result % 5) == 0) {
+        [fizzBuzzText appendString:@"buzz"];
+    }
+    if ([fizzBuzzText isEqualToString:@""]) {
+        [fizzBuzzText appendString:@(result).description];
+    }
+    self.answerLabel.text = fizzBuzzText;
 }
 
 @end
