@@ -26,5 +26,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)onCalculateButtonPressed:(id)sender {
+    int number = [self.numberTextField.text intValue];
+    int multiplier = [self.multiplierLabel.text intValue];
+
+    int result = number * multiplier;
+
+    self.answerLabel.text = @(result).description;
+}
 
 @end

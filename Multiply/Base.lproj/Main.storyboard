@@ -33,7 +33,7 @@
                                     <rect key="frame" x="130" y="71" width="140" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvg-fr-Kau">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvg-fr-Kau">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,6 +42,18 @@
                                     <rect key="frame" x="130" y="147" width="140" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T6-jc-T2W">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="130" y="195" width="140" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onCalculateButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dsM-3V-tuV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -49,6 +61,7 @@
                                 <exclude reference="CgD-ZN-Lbh"/>
                                 <exclude reference="fE3-rT-0p1"/>
                                 <exclude reference="pvg-fr-Kau"/>
+                                <exclude reference="6T6-jc-T2W"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -56,6 +69,7 @@
                                 <include reference="CgD-ZN-Lbh"/>
                                 <include reference="fE3-rT-0p1"/>
                                 <include reference="pvg-fr-Kau"/>
+                                <include reference="6T6-jc-T2W"/>
                             </mask>
                         </variation>
                     </view>
