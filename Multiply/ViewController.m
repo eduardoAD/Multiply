@@ -59,6 +59,7 @@
         }
         self.answerLabel.text = fizzBuzzText;
     }
+    [self.numberTextField resignFirstResponder];
 }
 
 - (IBAction)sliderValueChanged:(id)sender {
@@ -66,6 +67,7 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
     [self onCalculateButtonPressed:textField];
     return NO;
 }
